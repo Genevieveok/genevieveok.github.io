@@ -120,19 +120,32 @@ section h1 {
   padding-top: 60px;
 }
 #section01 a span {
-  position: absolute;
+ position: absolute;
   top: 0;
   left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+
+#section01 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
-
 
 #thanks {
   background-color: #fff;
