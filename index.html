@@ -384,6 +384,41 @@ position:relative;
 }
 
 
+.photo-grid {
+  margin: 1em auto;
+  max-width: 1106px;
+  text-align: center;
+}
+
+.photo-grid figure {
+  height: 163px;
+  overflow: hidden;
+  position: relative;
+  width: 289px;
+}
+
+.photo-grid figcaption {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  display: table;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.photo-grid figcaption p {
+  display: table-cell;
+  font-size: 1.5em;
+  position: relative;
+  top: -40px;
+  width: 289px;
+  vertical-align: middle;
+}
+
 </style>
 
 <br>
@@ -392,11 +427,19 @@ position:relative;
 <br>
 
 <div style="text-align: center">
-
+<ul class="photo-grid">
+  <li>
+    <a href="http://www.flickr.com/photos/anirudhkoul/3536413126/">
+      <figure>
 <br>
 <br>
 <br>
 <img src="1.jpg"  width="1000px" top="1000px" height="1000px" background-color= "white">
+
+</figure>
+    </a>
+  </li>
+</ul>
 </div>
 
 
