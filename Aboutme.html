@@ -65,7 +65,7 @@ width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.mySlides {display:none;}
 </style>
 </head>
 
@@ -160,7 +160,30 @@ width: 100%;
 <br>
 
 
- 
+<div  style="max-width:500px">
+  <img class="mySlides" src="fam.jpg" style="width:100%">
+  <img class="mySlides" src="fam2.jpg" style="width:100%">
+  <img class="mySlides" src="fam3.jpg" style="width:100%">
+  <img class="mySlides" src="fam4.jpg" style="width:100%">
+</div>
+
+ <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
 <style rel="stylesheet" type="text/css">
 #footer { 
  width: 1290px;
