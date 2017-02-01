@@ -92,18 +92,25 @@ a.ex1:hover:not(.active) {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#panel
+{
+     height: 200px;
+     width: 200px;
+     background: #E88C37;
+     float: left;
+     display: none;
+     font-size: xx-large;
+}
 </style>
 
 <link rel="icon" href="https://genevieveok.github.io/gpo.jpg">
 
 
 <script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $("#div1").fadeIn();
-      
-         
-    });
+$('#click').click(function()
+{   
+    $("#panel").toggle();     
 });
 </script>
 
@@ -160,11 +167,8 @@ $(document).ready(function(){
 <br>
 <br>
 
-
-<button>Click to fade in boxes</button><br><br>
-
-<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
-
+<div id='panel'>[Put your content here]</div>
+<input type="button" id='click' value="Show/Hide" />
 <h2 id = "four"> <font color="sandybrown">Project work </font></h2>
 
 <h3> Arthiritis prototype Project work </h3>
