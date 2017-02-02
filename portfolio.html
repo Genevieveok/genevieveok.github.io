@@ -280,6 +280,9 @@ Received an A for project.</p></li>
 <img id="myImg" style="border:0px;margin:60px"  src="webhandytool.png" alt=" Demonstrated good communications and organizational skills while working efficiently in a group of three to develop a WebCrawler and received an excellent grade for project.        WebCrawler goes through websites, saves the links on the website, saves images and files according to what the user requests, and checks for errors on the website." width="400" height="400">
 <img id="myImgs" src="2.jpg" alt="Trolltungeeeeea,  hehhwg
 erhrh Norway" width="400" height="400">
+<img id="myImgss" src="connectfour.png" alt="Implemented classic Connect 4 game with 2 players.
+This was the final Project for 2nd Year Software Design Course.
+Developed good communication skills while working in a group of six to complete this project" width="400" height="400">
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
@@ -316,6 +319,28 @@ var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('myImgs');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImgss');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
