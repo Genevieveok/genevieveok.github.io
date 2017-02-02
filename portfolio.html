@@ -279,7 +279,7 @@ Received an A for project.</p></li>
 
 <img id="myImg" src="webhandytool.png" alt="Trolltungeeeeea,  hehhwg
 erhrh Norway" width="400" height="400">
-<img id="myImg" src="2.jpg" alt="Trolltungeeeeea,  hehhwg
+<img id="myImgs" src="2.jpg" alt="Trolltungeeeeea,  hehhwg
 erhrh Norway" width="400" height="400">
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -294,6 +294,29 @@ var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImgs');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
