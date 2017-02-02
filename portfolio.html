@@ -272,6 +272,10 @@ get information about the products or services." width="365" height="310">
 This was the final Project for 2nd Year Software Design Course.
 Developed good communication skills while working in a group of six to complete this project.
 " width="365" height="310">
+<img id="myImgsss" style="border:0px;margin:40px"  src="personal.jpg" alt="Implemented classic Connect 4 game with 2 players.
+This was the final Project for 2nd Year Software Design Course.
+Developed good communication skills while working in a group of six to complete this project.
+" width="365" height="310">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -347,6 +351,29 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImgsss');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
 
 
 
